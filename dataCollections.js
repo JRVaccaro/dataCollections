@@ -1,0 +1,44 @@
+let csv = "ID, Name, Occuptation, Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26";
+
+let cell1 = "";
+let cell2 = "";
+let cell3 = "";
+let cell4 = "";
+
+let selectedCell = 1;
+
+for(let i = 0; i < csv.length; i++){
+
+    let letter = csv[i];
+
+if(letter === ','){
+    selectedCell++;
+
+}
+
+else if (letter ==="\n"){
+    console.log(cell1, cell2, cell3, cell4);
+
+    cell1 = "";
+    cell2 = "";
+    cell3 = "";
+    cell4 = "";
+
+    selectedCell = 1;
+    
+}
+else if (selectedCell === 1){
+        cell1 += letter;
+
+    }
+else if (selectedCell === 2){
+        cell2 += letter;
+    
+} else if (selectedCell === 3){
+    cell3 += letter;
+}
+else {
+    cell4 += letter;
+}
+console.log(cell1, cell2, cell3, cell4);
+}
