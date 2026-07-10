@@ -62,6 +62,12 @@ let headers = csvData[0];
 
 let people = [];
 
+for(let i = 1; i < csvData.length; i++){//putting 1 so it doesnt include header to loop through data row
+    let person {};
+    
+    console.log(person);
+}
+
 console.log(headers);
 
 console.log(csvData);
