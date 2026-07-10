@@ -63,16 +63,16 @@ let headers = csvData[0];
 let people = [];
 
 for(let i = 1; i < csvData.length; i++){//putting 1 so it doesnt include header to loop through data row
-    let person {};
+    let person = {};
 
     for(let x = 0; x < numberOfColumns; x++){
         person[headers[x].toLowerCase()] = csvData[i][x];
     }
     
-    console.log(person);
+    people.push(person);
 }
+console.log(people);
 
 console.log(headers);
 
 console.log(csvData);
-
