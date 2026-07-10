@@ -45,5 +45,14 @@ console.log(cell1, cell2, cell3, cell4);
 
 let csv ="ID, Name, Occuptation, Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26";
 
-let rows = csv.split("/n");
+let rows = csv.split("\n");
+
+ let csvData = [];
+
+ for(let i = 0; i < rows.length; i++){
+    let columns = rows[i].split(",");
+
+    csvData.push(columns);
+ }
+
 console.log(rows);
