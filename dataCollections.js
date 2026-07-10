@@ -60,6 +60,8 @@ console.log(numberOfColumns);
 
 let headers = csvData[0];
 
+let people = [];
+
 console.log(headers);
 
 console.log(csvData);
