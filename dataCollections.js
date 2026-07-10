@@ -58,4 +58,9 @@ console.log(numberOfColumns);
     csvData.push(columns);
  }
 
-console.log(rows);
+let headers = csvData[0];
+
+console.log(headers);
+
+console.log(csvData);
+
