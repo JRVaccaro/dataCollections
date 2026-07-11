@@ -101,4 +101,15 @@ people.push({
 console.log(people);
 // Transform final set of data back into CSV format....:(
 
-let newCsv ="ID,Name,Occupation,Age\n";
+/*let newCsv ="ID,Name,Occupation,Age\n";
+
+for (let v = 0; v < people.length; v++){
+    newCsv = `${people[i].id}, ${people.name[i]}, ${people[i].occupation}, ${people[i].age}`
+
+
+    // uhhhh.... a little lost for this part... 
+
+
+}
+console.log(newCsv); */
+//Its saying i isnt defined, unsure about this last part 
