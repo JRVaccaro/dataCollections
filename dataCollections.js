@@ -88,4 +88,14 @@ age: "25",
 
 });
 
+
+//Adding bilbo to end of array with push 
+
+people.push({
+    id: "7",
+    name: "Bilbo",
+    occupation: "None",
+    age: "111",
+})
+
 console.log(people);
