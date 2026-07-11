@@ -77,6 +77,15 @@ console.log(people);
 
 people.pop();
 
-console.log(headers);
+//adding object to index one
 
-console.log(csvData);
+people.splice(1, 0,{
+
+id: "48",
+name: "Barry",
+occupation: "Runner",
+age: "25",
+
+});
+
+console.log(people);
