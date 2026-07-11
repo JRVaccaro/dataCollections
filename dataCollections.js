@@ -70,8 +70,12 @@ for(let i = 1; i < csvData.length; i++){//putting 1 so it doesnt include header 
     }
     
     people.push(person);
+
 }
+
 console.log(people);
+
+people.pop();
 
 console.log(headers);
 
